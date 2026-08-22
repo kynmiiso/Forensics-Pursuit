@@ -17,7 +17,7 @@
         "name": "Bag Fingerprint 1",
 	"usable": true,
 	"action": "bag_finger_1",
-        "image_name": "inventory-sealedbag",
+        "image_name": "inventory-sbprint1s",
 	"description": "Fingerprint from the top of the pill bottle"
     },
 {
@@ -38,21 +38,43 @@
         "name": "Bag Fingerprint 2",
 	"usable": true,
 	"action": "bag_finger_2",
-        "image_name": "inventory-sealedbag",
+        "image_name": "inventory-sbprint2s",
 	"description": "Fingerprint from the plastic bag"
     },
+{
+        "name": "Fingerprint 3 S",
+        "image_name": "inventory-finger1-scale",
+	"description": "Fingerprint from the half drunk grapefruit juice bottle",
+	"usable": true,
+	"action": "bag_item3"
+    },
+{
+        "name": "Fingerprint 3 NS",
+        "image_name": "inventory-finger1-noscale",
+	"description": "Fingerprint from the half drunk grapefruit juice bottle",
+	"usable": true,
+	"action": "bag_item3"
+    },
+{
+        "name": "Bag Fingerprint 3",
+	"usable": true,
+	"action": "bag_finger_3",
+        "image_name": "inventory-sbprint1s",
+	"description": "Fingerprint from the half drunk grapefruit juice bottle"
+    },
+
 
     {
-        "name": "Brownie",
-        "image_name": "inventory-brownie",
-	"description": "A brownie",
+        "name": "Grape",
+        "image_name": "inventory-grape",
+	"description": "A half empty bottle of grapefruit juice.",
 	"usable": true,
 	"action": "bag_item4"
     },
 {
-        "name": "Bag Brownie",
-        "image_name": "inventory-sealedbag",
-	"description": "A brownie"
+        "name": "Bag Grape",
+        "image_name": "inventory-sbgrape",
+	"description": "A half empty bottle of grapefruit juice."
     },
     {
         "name": "Plastic bag",
@@ -63,7 +85,7 @@
     },
 {
         "name": "Bag Plastic bag",
-        "image_name": "inventory-sealedbag",
+        "image_name": "inventory-sbweedbag",
 	"description": "A plastic bag containing some green substance"
     },
     {
@@ -75,8 +97,11 @@
     },
 {
         "name": "Bag Pill bottle",
-        "image_name": "inventory-sealedbag",
-	"description": "A pill bottle with 2 pills left"
+        "image_name": "inventory-sbpill",
+	"description": "A pill bottle with 2 pills left",
+	"usable": true,
+	"action": "bagged_pill"
+
     },
 {
 	"name": "Parents Testimony",
@@ -90,7 +115,7 @@
     },
 {
 	"name": "Post blood sample",
-	"image_name": "blood_sample",
+	"image_name": "blood_sample_post",
 	"description": "Post-mortem blood sample",
 	"usable": true,
 	"action": "use_postbs"
@@ -98,7 +123,7 @@
     },
 {
 	"name": "Pre blood sample",
-	"image_name": "blood_sample",
+	"image_name": "blood_sample_pre",
 	"description": "Pre-mortem blood sample",
 	"usable": true,
 	"action": "use_prebs"
@@ -106,7 +131,7 @@
     },
 {
 	"name": "Prepared post blood sample",
-	"image_name": "prepared_blood_sample",
+	"image_name": "blood_sample_post",
 	"description": "Prep post-mortem blood sample",
 	"usable": true,
 	"action": "use_ppostbs"
@@ -114,7 +139,7 @@
     },
 {
 	"name": "Prepared pre blood sample",
-	"image_name": "prepared_blood_sample",
+	"image_name": "blood_sample_pre",
 	"description": "Prep pre-mortem blood sample",
 	"usable": true,
 	"action": "use_pprebs"
@@ -124,14 +149,16 @@
 {
 	"name": "Hospital Report",
 	"image_name": "hospital_report",
-	"description": "Alastor's hospital report"
-
+	"description": "Alastor's hospital report",
+	"usable": true,
+	"action": "use_hospital_report"
     },
 {
 	"name": "Toxicology Report",
 	"image_name": "tox_report",
-	"description": "Alastor's toxicology report"
-
+	"description": "Alastor's toxicology report",
+	"usable": true,
+	"action": "use_tox_report"
 
     },
 {

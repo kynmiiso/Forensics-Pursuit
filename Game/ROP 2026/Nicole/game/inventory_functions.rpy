@@ -20,6 +20,8 @@ init -5 python:
         renpy.jump("bagItem1")
     def bag_item2():
         renpy.jump("bagItem2")
+    def bag_item3():
+        renpy.jump("bagItem3")
     def bag_item4():
         renpy.jump("bagItem4")
     def bag_item5():
@@ -27,11 +29,15 @@ init -5 python:
     def bag_item6():
         renpy.jump("bagItem6")
 
-    #fingerprint analysis in the lab
+    #bagged items to use in the lab
     def bag_finger_1():
         renpy.jump("bagFinger1")
     def bag_finger_2():
         renpy.jump("bagFinger2")
+    def bag_finger_3():
+        renpy.jump("bagFinger3")
+    def bagged_pill():
+        renpy.jump("baggedPill")
 
     # LAB SPE
     def use_Methanol():
@@ -52,3 +58,9 @@ init -5 python:
         renpy.jump("usePpreBS")
     def use_water():
         renpy.jump("useWater")
+
+    #reports
+    def use_hospital_report():
+        renpy.jump("useHospitalReport")
+    def use_tox_report():
+        renpy.jump("useToxReport")

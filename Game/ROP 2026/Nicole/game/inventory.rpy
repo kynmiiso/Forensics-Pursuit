@@ -297,9 +297,9 @@ screen inventory():
 
         add Transform("inventory-bg", xzoom=0.83, yzoom=0.95, yoffset=40)
 
-        imagebutton:
-            auto "close-inv-%s" at Transform(rotate=1, xoffset=49, yoffset=350)
-            action [ToggleScreen("inventory"), ToggleScreen("open_inv")]
+        #imagebutton:
+        #    auto "close-inv-%s" at Transform(rotate=1, xoffset=49, yoffset=350)
+        #    action [ToggleScreen("inventory"), ToggleScreen("open_inv")]
 
 
         vbox:
@@ -368,8 +368,6 @@ screen inventory_slot(item=None):
                     imagebutton:
                         auto "view-inventory-item-%s" at Transform(zoom=0.47)
                         action Function(view_item, name=name, image_name=image_name, description=description)
-
-                # TODO: expand
 
 
 screen inventory_info(name="", image_name="", description=""):
